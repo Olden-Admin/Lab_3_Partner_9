@@ -1,6 +1,11 @@
-def is_palindrome(word):
-    """Check if the inputed word is a palindrome."""
-    return word == word[::-1]
-
 def is_pangram(sentence):
-    pass
+   """Return True if sentence is a pangram, False otherwise."""
+   alphabet = 'abcdefghijklmnopqrstuvwxyz'
+   for char in alphabet:
+      if char not in sentence.lower():
+         return False
+   return True
+
+def is_palindrome(word):
+   """Return True if word is a palindrome, False otherwise."""
+   return word == word[::-1]
