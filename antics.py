@@ -3,7 +3,7 @@
 # Group Partner 9
 # Angela Wu, Kiyale Olden, Yasi Yavari-Behrouz  
 
-def is_abecedarian(word_in):
+def abecedarian(word_in):
     """Return True if the letters in word_in are in alphabetical order, False otherwise."""
     word = word_in.lower()
     previous = word[0]
@@ -13,7 +13,7 @@ def is_abecedarian(word_in):
         previous = i
     return True
 
-def is_dobloon(word):
+def dobloon(word):
    """Return True if word is a doobloon, False otherwise."""
    for i in word:
       count = 1
@@ -26,7 +26,7 @@ def is_dobloon(word):
          return False
    return True
     
-def is_isogram(word):
+def isogram(word):
     letter_counts = {}
 
     for letter in word:
@@ -36,26 +36,18 @@ def is_isogram(word):
             letter_counts[letter] = 1
     return True
 
-def is_pangram(sentence):
+def pangram(sentence):
    """Return True if sentence is a pangram, False otherwise."""
    alphabet = 'abcdefghijklmnopqrstuvwxyz'
    for char in alphabet:
        if char not in sentence.lower():
            return False
               
-def is_pangram(sentence):
-         """Return True if sentence is a pangram, False otherwise."""
-         alphabet = 'abcdefghijklmnopqrstuvwxyz'
-         for char in alphabet:
-            if char not in sentence.lower():
-               return False
-         return True
-
-def is_palindrome(word):
+def palindrome(word): 
    """Return True if word is a palindrome, False otherwise."""
    return word == word[::-1]
 
-def is_tautogram(text):
+def tautogram(text):
     words = text.split()
     first_letter = words[0][0].lower()
 
