@@ -1,7 +1,7 @@
 # CIS-117 Lab3
 # Write a description of your module here
-# Group 9
-# Angela Wu, Kiyale Olden, Yasi Yavari-Behrouz 
+# Group Partner 9
+# Angela Wu, Kiyale Olden, Yasi Yavari-Behrouz  
 
 def is_abecedarian(word_in):
     """Return True if the letters in word_in are in alphabetical order, False otherwise."""
