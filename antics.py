@@ -42,8 +42,8 @@ def is_pangram(sentence):
    for char in alphabet:
        if char not in sentence.lower():
            return False
-       
-      def is_pangram(sentence):
+              
+def is_pangram(sentence):
          """Return True if sentence is a pangram, False otherwise."""
          alphabet = 'abcdefghijklmnopqrstuvwxyz'
          for char in alphabet:
