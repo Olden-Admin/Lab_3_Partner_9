@@ -1,5 +1,5 @@
 # CIS-117 Lab3
-# Write a description of your module here
+# These functions tests for abecedarian, doobloon, isogram, pangram, palindrome, and tautogram.
 # Group Partner 9
 # Angela Wu, Kiyale Olden, Yasi Yavari-Behrouz  
 
@@ -27,6 +27,7 @@ def dobloon(word):
    return True
     
 def isogram(word):
+    """Return True if word is an isogram, False otherwise."""
     letter_counts = {}
 
     for letter in word:
@@ -48,6 +49,7 @@ def palindrome(word):
    return word == word[::-1]
 
 def tautogram(text):
+    """Return True if text is a tautogram, False otherwise."""
     words = text.split()
     first_letter = words[0][0].lower()
 
